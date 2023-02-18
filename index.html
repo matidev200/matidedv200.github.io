@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias De Vito</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="my_jobs_section.css">
+<link rel="stylesheet" href="skills_section.css">
+<link rel="stylesheet" href="responsive.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;900&display=swap');
+</style>
+
+<style>
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        transition: 2s ease-in;
+    }
+
+    * {
+        background-color: #F5F5F5;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: normal;
+        color: #000000;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    nav {
+        --navbar-height: 64px;
+        position: fixed;
+        z-index: 2;
+        background-color: #F5F5F5;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="nav-buttons">
+            <a href="#home">Home</a>
+            <a href="#works">My Works</a>
+            <a href="#skills">My Skills</a>
+            <a href="#certificates">My Certificates</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#reviews">Customers Reviews</a>
+            <a onclick="openNav()" id="open-nav"><img src="./src/images/navbar.png" alt="" height="60" width="60"></a>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#home">Home</a>
+            <a href="#works">My Works</a>
+            <a href="#skills">My Skills</a>
+            <a href="#certificates">My Certificates</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#reviews">Customers Reviews</a>
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+        <section class="home" id="home">
+            <div class="presentation">
+
+                <div class="linux">
+                    <img src="./src/images/linux.png" width="323" height="303" alt="">
+                </div>
+                <div class="title">
+                    <h1>Hi, I'm Matias</h1>
+                    <p>Backend Developer & enthusiastic in <br>
+                        web-development </p>
+                </div>
+            </div>
+
+            <div class="down-image">
+                <img src="./src/images/arrow-down.png" alt="" height="100" width="100" class="down-row">
+            </div>
+
+        </section>
+
+        <section class="my-works" id="works">
+            <div class="my-works-introduction">
+                <p style="text-align:center; font-size: 40px; font-weight: lighter; margin-bottom: 10px;">My Works :)
+                </p>
+                <p style="text-align:center; margin-bottom: 60px;"> In this section you see the works that i've been
+                    doing for my clients</p>
+            </div>
+            <div class="works-container">
+                <div class="work">
+                    <h5>Sistema para ventas y compras — Aplicación Web</h5>
+                    <p>Aplicación web escrita en Python con el framework django para el rápido acceso a la
+                        creación de ventas en un puesto de mercaderías pesadas, incluyendo el registro y pago a
+                        los proveedores para las respectivas compras del negocio. </p>
+
+                </div>
+                <div class="work">
+                    <h5>Sistema para gestión de caja — Aplicación Web</h5>
+                    <p>Aplicación web escrita en Python con el framework django-rest y jquery para la
+                        generación de comprobantes en un punto de venta, con escaneo de productos mediante
+                        un escáner usb y control de inventario </p>
+
+                </div>
+
+                <div class="work">
+                    <h5>Ecommerce Mercadopago — Aplicación Web</h5>
+                    <p>Aplicación web escrita en Python con Flask, ecommerce básico como modelo de pruebas
+                        para el examen de Mercadopago developers.</p>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="my-skills" id="skills">
+
+        <div class="my-skills-introduction">
+            <p style="text-align:center; font-size: 40px; font-weight: lighter; margin-bottom: 10px;">My Skills :)
+            </p>
+            <p style="text-align:center; margin-bottom: 60px;">In this section i'll show you my abilities that i've
+                learned throughout the time</p>
+        </div>
+
+        <div class="skills-group">
+            <div class="2years">
+                <div class="header-text">
+                    <h5 style="margin-bottom: 10px;">2+ Years</h5>
+                    <hr>
+                </div>
+                <div class="skills">
+                    <img src="./src/images/abilities/2 years/django.png" alt="" height="100" width="80">
+                    <img src="./src/images/abilities/2 years/python.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/postgresql.png" alt="" height="100" width="100">
+                </div>
+            </div>
+
+            <div class="1year">
+                <div class="header-text">
+                    <h5 style="margin-bottom: 10px;">1 Year</h5>
+                    <hr>
+                </div>
+                <div class="skills">
+                    <img src="./src/images/abilities/2 years/git-icon.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/flask.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/pandas.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/boostrap.png" alt="" height="100" width="120">
+                    <img src="./src/images/abilities/2 years/html.png" alt="" height="100" width="100">
+                    <img src="./src/images/linux.png" alt="" height="100" width="100">
+                </div>
+            </div>
+
+            <div class="less1year">
+                <div class="header-text">
+                    <h5 style="margin-bottom: 10px;">Less than 1 year</h5>
+                    <hr>
+                </div>
+                <div class="skills">
+                    <img src="./src/images/abilities/2 years/800px-JavaScript-logo.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/pytest.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/dev_icon.png" alt="" height="100" width="100">
+                    <img src="./src/images/abilities/2 years/figma.png" alt="" height="100" width="100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="my-certificates" id="certificates">
+        <div class="my-certificates-introduction">
+            <p style="text-align:center; font-size: 40px; font-weight: lighter; margin-bottom: 10px;">My
+                Certificates :)
+            </p>
+            <p style="text-align:center; margin-bottom: 60px;">In my road of programmer, i've done many
+                certifications like these</p>
+        </div>
+        <div class="certificates">
+            <img src="./src/certificates/certificado mercadolibre.png" alt="" height="300" width="420">
+            <img src="./src/certificates/curso udemy 2.jpg" alt="" height="300" width="420">
+            <img src="./src/certificates/curso udemy sql.jpg" alt="" height="300" width="420">
+            <img src="./src/certificates/Data Structures hackerrank.png" alt="" height="300" width="420">
+            <img src="./src/certificates/js hackerrank.png" alt="" height="300" width="420">
+            <img src="./src/certificates/sql hackerrank.png" alt="" height="300" width="420">
+        </div>
+    </section>
+
+    <section class="about-me" id="aboutme">
+        <div class="about-me-introduction">
+            <p style="text-align:center; font-size: 40px; font-weight: lighter; margin-bottom: 10px;">About Me &
+                Contact
+            </p>
+            <hr>
+        </div>
+        <div class="matias-de-vito">
+            <img src="./src/images/profile pic.png" width="205" height="200" alt="" class="profile-pic">
+            <h6>Matias <br>De Vito</h6>
+        </div>
+        <div class="about-me-desc">
+            <p style="display: inline; font-weight: lighter; font-size: 30px;">I'm a python developer and a lover of
+                the computer science, I started programming since I was 14 <br>
+                years old actually I'm 18. Since then I've been focused on the backend, with frameworks like django
+                and flask, then I improved my skills learning libraries how django REST,JWT tokens and a little of
+                testing.</p>
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/matias-de-vito-90924423b/"><img src="./src/images/linkedin.png" alt=""
+                    height="60" width="60"></a>
+            <a href="https://github.com/matidev200"><img src="./src/images/githubcat.png" alt="" height="60"
+                    width="60"></a>
+            <a href="mailto:matiasdv1@hotmail.com"><img src="./src/images/email_black.png" alt="" height="60"
+                    width="60"></a>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="reviews-introduction">
+            <p style="text-align:center; font-size: 40px; font-weight: lighter; margin-bottom: 10px;">Customers
+                Reviews
+            </p>
+            <p style="text-align:center; margin-bottom: 60px;">Throughout the time, I’ve been offering
+                my web systems to different clients, in this
+                section you can see her reviews.</p>
+        </div>
+
+        <div class="client-container">
+            <div>
+                <article class="client-info">
+                    <img src="./src/images/rr.jpg" style="border-radius: 50%;" class="client-img" height="150"
+                        width="150">
+                    <h6 class="client-name" style="font-size: 20px;"> Random Repairs</h6>
+                    <p class="client-review" style="text-align: center;"> “Los servicios prestados han sido muy
+                        satisfactorios para la compañia, evolucionando la manera de optimizar y mejorar los procesos ”
+                    </p>
+                </article>
+            </div>
+            <img class="left" aria-label="left-row" src="./src/images/row left.png" alt="">
+            <img class="right" aria-label="right-row" src="./src/images/row left.png" alt="">
+        </div>
+    </section>
+    </div>
+</body>
+<script>
+    function openNav() { document.getElementById("sidebar").style.width = "200px"; }
+    function closeNav() { document.getElementById("sidebar").style.width = "0px"; }
+
+</script>
+
+</html>

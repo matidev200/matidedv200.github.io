@@ -1,0 +1,74 @@
+.linux{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8%;
+    margin: 17px;
+}
+
+.nav-buttons a {
+    padding: 0;
+    text-decoration:none;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.presentation {
+    padding: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.main-buttons button {
+    font-size: 45px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.title h1 {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 131px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.title p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.down-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

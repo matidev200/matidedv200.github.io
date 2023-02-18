@@ -1,0 +1,177 @@
+/* Home Responsive */
+
+
+/* Navbar Hamburger */
+@media screen and (min-width: 675px) {
+    .nav-buttons img {
+        display: none;
+    }
+
+    .matias-de-vito br {
+        display: none;
+    }
+
+    .about-me-introduction hr {
+        width: 500px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 675px) {
+
+    /* My Presentation */
+
+    .linux img {
+        height: 170px;
+        width: 180px;
+    }
+
+    .title h1 {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .title p {
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 35px;
+    }
+
+    .presentation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /* Navbar Responsive */
+
+    nav a {
+        display: none;
+    }
+
+    #open-nav {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .sidebar {
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+        font-size: 36px;
+        margin-left: 140px;
+    }
+
+    /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        background-color: #f1f1f1;
+    }
+
+    /* Active/current link */
+    .sidebar a.active {
+        background-color: #5b5f5e;
+        color: #f1f1f1;
+    }
+
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        background-color: #c0c0c0;
+        color: #000000;
+    }
+
+    /* Projects Responsive */
+
+    .works-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .work {
+        width: 330px;
+        margin: auto;
+    }
+
+    /* About me Responsive */
+
+    .matias-de-vito img {
+        width: 150px;
+        height: 150px;
+        border: 10px solid whitesmoke;
+    }
+
+    .matias-de-vito h6 {
+        font-size: 40px;
+        font-weight: 400;
+        white-space: pre;
+        margin: auto;
+    }
+
+    .matias-de-vito {
+        column-gap: 20px;
+    }
+
+    .about-me-introduction hr {
+        width: 300px;
+        padding-left: 20px;
+    }
+
+    /* Sections Responsive */
+
+    .presentation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .2years {
+        width: 100%;
+    }
+
+    .skills {
+        padding: 0.5rem 0;
+    }
+
+    .certificates {
+        width: 100%;
+    }
+
+    .certificates>img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1250px) {
+    section {
+        padding: 0 10rem;
+    }
+}
