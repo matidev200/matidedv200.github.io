@@ -56,6 +56,10 @@
         display: none;
     }
 
+    #open-nav img {
+        margin: 0 17px;
+    }
+
     #open-nav {
         display: block;
     }
@@ -63,8 +67,6 @@
     nav {
         display: flex;
         flex-direction: row-reverse;
-        max-height: 4.2rem;
-
     }
 
     .sidebar {
