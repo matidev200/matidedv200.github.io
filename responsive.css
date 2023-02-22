@@ -63,6 +63,7 @@
     nav {
         display: flex;
         flex-direction: row-reverse;
+        max-height: 4.2rem;
 
     }
 
