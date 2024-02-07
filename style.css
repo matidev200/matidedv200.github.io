@@ -1,4 +1,31 @@
-.linux{
+.nav-buttons a {
+    text-decoration: none;
+    color: #333;
+    /* Color del texto */
+    position: relative;
+}
+
+.nav-buttons a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    /* Distancia del borde inferior */
+    left: 0;
+    width: 0%;
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #000;
+    /* Color de la línea */
+    transition: width 0.3s ease;
+    /* Transición suave */
+}
+
+.nav-buttons a:hover::after {
+    width: 100%;
+    /* Ancho completo en hover */
+}
+
+.linux {
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -7,9 +34,17 @@
 }
 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
 }
 
 .nav-buttons {
@@ -22,7 +57,7 @@
 
 .nav-buttons a {
     padding: 0;
-    text-decoration:none;
+    text-decoration: none;
     border: none;
     background: none;
     font-size: 20px;
@@ -68,5 +103,3 @@
     justify-content: center;
     align-items: center;
 }
-
-

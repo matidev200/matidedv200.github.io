@@ -1,8 +1,42 @@
-
-.skills {
+/* Estilos para pantallas grandes */
+.skills-group {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-between;
+    /* Distribuye uniformemente los elementos en la fila */
+}
+
+.python,
+.django,
+.sql,
+.linuxx,
+.web {
+    flex: 0 1 calc(20% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .skills-group {
+        display: flex;
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+    }
+
+    .python,
+    .django,
+    .sql,
+    .linuxx,
+    .web {
+        flex: 1 1 auto;
+        /* Toma todo el ancho disponible */
+        margin-bottom: 20px;
+    }
 }
 
 .certificates {
@@ -50,13 +84,13 @@
     padding: 50px;
 }
 
-.client-container{
+.client-container {
     overflow: hidden;
     border: 1px solid black;
     position: relative;
 }
 
-.client-container div{
+.client-container div {
     display: flex;
     align-items: center;
     flex-direction: row;
