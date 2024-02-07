@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="my_jobs_section.css">
 <link rel="stylesheet" href="skills_section.css">
 <link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;900&display=swap');
@@ -25,7 +26,6 @@
     html {
         box-sizing: border-box;
         scroll-behavior: smooth;
-        transition: 2s ease-in;
     }
 
     * {
@@ -122,14 +122,14 @@
             </div>
             <div class="works-container">
                 <div class="work">
-                    <h5>Sistema para ventas y compras — Aplicación Web</h5>
+                    <h5>Sales and Purchases System — Web Application</h5>
                     <p>Web application written in Python using the Django framework for quick access to sales creation
                         in a heavy merchandise booth, including registration and payment to suppliers for respective
                         business purchases. </p>
 
                 </div>
                 <div class="work">
-                    <h5>Sistema para gestión de caja — Aplicación Web</h5>
+                    <h5>Cash Management System — Web Application</h5>
                     <p>Web application written in Python using the Django REST framework and jQuery for generating
                         receipts at a point of sale, with product scanning through a USB scanner and inventory control.
                     </p>
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="work">
-                    <h5>Ecommerce Mercadopago — Aplicación Web</h5>
+                    <h5>Ecommerce Mercadopago — Web Application</h5>
                     <p>Web application written in Python using Flask, basic e-commerce as a test model for the
                         MercadoPago developers exam.</p>
                 </div>
@@ -172,46 +172,68 @@
         </div>
 
         <div class="skills-group">
-            <div class="2years">
-                <div class="header-text">
-                    <h5 style="margin-bottom: 10px;">2+ Years</h5>
-                    <hr>
-                </div>
-                <div class="skills">
-                    <img src="./src/images/abilities/2 years/django.png" alt="" height="100" width="80">
-                    <img src="./src/images/abilities/2 years/python.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/postgresql.png" alt="" height="100" width="100">
-                </div>
+            <div class="python">
+                <h3><i class="fab fa-python" style="color: #3572A5;"></i> Python - 5 years of experience</h3>
+                <p>This is my first language with which I started building applications.<br> I implemented libraries
+                    such as:</p>
+                <ul class="library-list">
+                    <li>Flask</li>
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>Os</li>
+                    <li>Web Scraping - Selenium</li>
+                </ul>
             </div>
 
-            <div class="1year">
-                <div class="header-text">
-                    <h5 style="margin-bottom: 10px;">1 Year</h5>
-                    <hr>
-                </div>
-                <div class="skills">
-                    <img src="./src/images/abilities/2 years/git-icon.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/flask.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/pandas.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/boostrap.png" alt="" height="100" width="120">
-                    <img src="./src/images/abilities/2 years/html.png" alt="" height="100" width="100">
-                    <img src="./src/images/linux.png" alt="" height="100" width="100">
-                </div>
+            <div class="django">
+                <h3><i class="fab fa-python" style="color: #3572A5;"></i> Django - 4 years of experience</h3>
+                <p>This is my main framework for backend development.<br> I've been working with libraries/technologies
+                    such
+                    as:</p>
+                <ul class="library-list">
+                    <li>REST Framework</li>
+                    <li>Celery, Flower, and RabbitMQ</li>
+                    <li>Django backend filters</li>
+                    <li>Good experience with ORM</li>
+                    <li>Gunicorn</li>
+                </ul>
             </div>
 
-            <div class="less1year">
-                <div class="header-text">
-                    <h5 style="margin-bottom: 10px;">Less than 1 year</h5>
-                    <hr>
-                </div>
-                <div class="skills">
-                    <img src="./src/images/abilities/2 years/800px-JavaScript-logo.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/pytest.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/dev_icon.png" alt="" height="100" width="100">
-                    <img src="./src/images/abilities/2 years/figma.png" alt="" height="100" width="100">
-                </div>
+            <div class="sql">
+                <h3><i class="fas fa-database" style="color: #007ACC;"></i> SQL - 4 years of experience</h3>
+                <p>I learned SQL while I was learning Django. I have experience with:</p>
+                <ul class="library-list">
+                    <li>DDL (Data Definition Language)</li>
+                    <li>DML (Data Manipulation Language)</li>
+                    <li>Entity-Relationship diagrams</li>
+                    <li>Normalization 1NF, 2NF, 3NF</li>
+                </ul>
             </div>
-        </div>
+
+            <div class="linuxx">
+                <h3><i class="fab fa-linux" style="color: #000;"></i> Good knowledge of production environments</h3>
+                <p>I have experience with:</p>
+                <ul class="library-list">
+                    <li>Linux environment</li>
+                    <li>Docker/Compose</li>
+                    <li>GitHub Actions</li>
+                    <li>Nginx</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
+
+            <div class="web">
+                <h3><i class="fab fa-html5" style="color: #E34F26;"></i> Basic knowledge of frontend</h3>
+                <p>I've been working with frontend projects where I could learn:</p>
+                <ul class="library-list">
+                    <li>Node/npm</li>
+                    <li>Javascript/Typescript</li>
+                    <li>NextJS</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+
     </section>
 
 
